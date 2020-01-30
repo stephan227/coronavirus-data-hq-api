@@ -2,7 +2,13 @@
     "name": "coronarovirus-api",
     "version": 2,
     "routes": [
-        { "src": "/api", "dest": "/api" },
+        { "src": "/api", "dest": "/api",  "methods": ["GET"], 
+            "headers": {
+              "Access-Control-Allow-Headers": "*",
+              "Access-Control-Allow-Methods": "*",
+              "Access-Control-Allow-Origin": "*"
+            }
+        },
         { "src": "/*", "status": 404}
     ],
     "env": {
