@@ -1,0 +1,22 @@
+{
+  "name": "coronavirus-data-hq-api",
+  "version": "1.0.0",
+  "description": "The following repo contains the API for the Coronavirus Tracker https://coronavirus.visualdatahq.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephan227/coronavirus-data-hq-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephan227/coronavirus-data-hq-api/issues"
+  },
+  "homepage": "https://github.com/stephan227/coronavirus-data-hq-api#readme",
+  "dependencies": {
+    "mongodb": "^3.5.2"
+  }
+}
