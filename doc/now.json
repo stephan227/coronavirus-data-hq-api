@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "src": "/.*", "status": 308, "headers": { "Location": "https://festive-kirch-1fe7ad.netlify.com/" } }
+  ]
+}

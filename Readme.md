@@ -1,6 +1,9 @@
 # Coronavirus Tracke API
 The following repo contains the API for the Coronavirus Tracker https://coronavirus.visualdatahq.com
 
+Documentation can be found in the following link: 
+http://docs.coronavirus.visualdatahq.com/
+
 ## Requirements
 ```
 Node v10.15.0
@@ -46,4 +49,4 @@ To generate documentation, run:
   $ apidoc -i api/ -o doc/
 ```
 
-Documentation is autobuilt using netlify via webhook.
+Documentation is autobuilt in Netlify via webhook.
