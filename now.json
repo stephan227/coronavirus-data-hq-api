@@ -9,6 +9,7 @@
               "Access-Control-Allow-Origin": "*"
             }
         },
+        { "src": "/mongodb", "status": 404},
         { "src": "/*", "status": 404}
     ],
     "env": {

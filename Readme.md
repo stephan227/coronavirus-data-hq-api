@@ -22,12 +22,13 @@ $ now dev
 ## Deployment
 
 ### Using Zeit.com
+
 Add environment variable to production:
 ```
 $ now secrets add my-mongodb-uri mongodb+srv://<user>:<password>@my-cluster-uf345.mongodb.net/<database-name>?retryWrites=true
 ```
 
-Run now:
+Add the github integration to Zeit.co for auto deployment or Run now:
 ```
-$ now
+$ now --prod
 ```
