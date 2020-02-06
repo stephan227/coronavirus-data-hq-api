@@ -32,3 +32,18 @@ Add the github integration to Zeit.co for auto deployment or Run now:
 ```
 $ now --prod
 ```
+
+## Documentation
+
+Documentation is built using apidoc.
+To install apidoc, run:
+```
+  $ npm install -g apidoc
+```
+
+To generate documentation, run:
+```
+  $ apidoc -i api/ -o doc/
+```
+
+Documentation is autobuilt using netlify via webhook.

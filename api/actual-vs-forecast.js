@@ -3,28 +3,48 @@ const connectToDatabase = require('../mongodb/connection');
 /**
  * @api {get} /actual-vs-forecast
  * @apiName GetActualVSForecast
- * @apiGroup Forecasts
+ * @apiGroup Actual Vs Forecast
  *
- * @apiSuccess {data} array of Actual vs. Forecast data
- * @apiSuccess {insert_date} date when data was created
- * @apiSuccess {_id} record unique id
+ * @apiSuccess {date} array Actual vs. Forecast dataset
+ * @apiSuccess {string} insert_date Upload date
+ * @apiSuccess {string} _id unique id
  * 
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
  *     {
- *        "data":[
- *          {
- *              "date":"1/22/20",
- *              "confirmed_forecast":495,
- *              "deaths_forecast":10",
- *              "confirmed_actual":651,
- *              "deaths_actual":25,
- *              "suspected_actual":257
- *          }
- *        ],
- *        "insert_date":"2020-02-04T14:54:22.184Z",
- *        "_id": "5e369cc1058a17a2430ff097"
- *      }
+ *        "data":{
+ *            "tooltip":{
+ *                "trigger":"axis"
+ *            },
+ *            "legend":{
+ *                "data":["Infected","Forecast"]
+ *            },
+ *            "grid":{
+ *                "left":"3%",
+ *                "right":"4%",
+ *                "bottom":"3%",
+ *                "containLabel":true
+ *             },
+ *            "xAxis":{
+ *                "type":"category",
+ *                "boundaryGap":false,
+ *                "data":[
+ *                    "1/22/20"
+ *                ]},
+ *            "yAxis":{
+ *                "type":"value",
+ *                "position":"right"
+ *            },
+ *            "series":[
+ *                {
+ *                    "name":"Infected",
+ *                    "type":"line",
+ *                    "data":[0]
+ *                }
+ *            ]
+ *        },
+ *        "insert_date":"2020-02-06T09:00:04.798Z",
+ *        "_id":"10e97470-48bf-11ea-828c-5168a5b9223a"}
  *
  */
 

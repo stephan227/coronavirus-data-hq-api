@@ -20,6 +20,11 @@
     "mongodb": "^3.5.2"
   },
   "devDependencies": {
+    "apidoc": "^0.20.0",
     "jsdoc": "^3.6.3"
+  },
+  "apidoc": {
+    "title": "Coronavirus Tracker API",
+    "url" : "https://coronavirus.visualdatahq.com/api"
   }
 }
