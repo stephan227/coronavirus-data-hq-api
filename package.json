@@ -18,5 +18,8 @@
   "homepage": "https://github.com/stephan227/coronavirus-data-hq-api#readme",
   "dependencies": {
     "mongodb": "^3.5.2"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.3"
   }
 }
